@@ -26,7 +26,8 @@
 
   <style>
     :root {
-      --amazon-orange: #FF9900;
+      --amazon-orange: #FF9900;     /* cor do botão */
+      --loading-orange: #fe5e00;    /* cor da barra de progresso */
       --amazon-orange-hover: #E68A00;
       --amazon-gray: #F3F3F3;
       --amazon-white: #FFFFFF;
@@ -81,7 +82,7 @@
     .loading-progress {
       height: 100%;
       width: 0%;
-      background-color: var(--amazon-orange);
+      background-color: var(--loading-orange); /* só a barra mudou */
       animation: loadingBar 3s ease-out forwards;
     }
 
@@ -167,7 +168,7 @@
 
     .action-button {
       width: 100%;
-      background-color: var(--amazon-orange);
+      background-color: var(--amazon-orange); /* botão permanece #FF9900 */
       border: 1px solid #A88734;
       border-top: 1px solid #9C7E31;
       border-bottom: 1px solid #846A29;
